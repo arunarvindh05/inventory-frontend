@@ -5,7 +5,7 @@ import Product from '../components/Product'
 import { listProducts } from '../actions/productActions'
 import Message from '../components/Message'
 import Loader from '../components/Loader'
-import { Link, useParams, useNavigate } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import Paginate from '../components/Paginate'
 
 const HomeScreen = () => {

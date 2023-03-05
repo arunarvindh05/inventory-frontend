@@ -1,6 +1,6 @@
 import axios from 'axios'
 import React, { useState, useEffect } from 'react'
-import { Link, useParams, useNavigate, useLocation } from "react-router-dom";
+import { Link, useParams, useNavigate } from "react-router-dom";
 import { Form, Button } from 'react-bootstrap'
 import { useDispatch, useSelector } from 'react-redux'
 import Message from '../components/Message'
@@ -12,7 +12,7 @@ import { PRODUCT_UPDATE_RESET } from '../constants/productConstants'
 const ProductEditScreen = () => {
   const { id } = useParams()
   const productId = id
-  const location = useLocation()
+
   const history = useNavigate()
 
   const [name, setName] = useState('')
